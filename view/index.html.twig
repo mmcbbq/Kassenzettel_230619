@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for kasse in kassen %}
+    <div>{{ kasse.id }}</div>
+    <div>{{ kasse.datum|date('Y-m-d') }}</div>
+    <div><a href='../Kassenzettel/show.php?id={{ kasse.id }}'> <button> Show</button></a> </div>
+    <div><a href='../Kassenzettel/deleteKassen.php?id={{ kasse.id }}'> <button> delete</button></a> </div>
+{% endfor %}
+</body>
+</html>

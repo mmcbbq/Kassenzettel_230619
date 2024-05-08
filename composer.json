@@ -1,0 +1,8 @@
+{
+    "require": {
+        "fakerphp/faker": "^1.23",
+        "mbezhanov/faker-provider-collection": "^2.0",
+      "ext-pdo": "*",
+        "twig/twig": "^3.9"
+    }
+}
